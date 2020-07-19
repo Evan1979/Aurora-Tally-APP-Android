@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/AddEarnFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/add_cost_bg"
+    tools:context=".AddEarnFragment">
+
+
+    <LinearLayout
+        android:id="@+id/lineEarnType"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_weight="1"
+        >
+
+        <ImageView
+            android:id="@+id/btnEarnType_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="@drawable/stylebtntype"
+            android:src="@drawable/store"
+            android:layout_margin="5dp"/>
+
+
+        <ImageView
+
+            android:id="@+id/btnEarnType_7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:src="@drawable/take_out"
+            android:background="@drawable/stylebtntype"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:id="@+id/btnEarnType_9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+
+            android:src="@drawable/lifemoney"
+            android:background="@drawable/stylebtntype"
+            android:layout_margin="5dp"/>
+
+
+        <ImageView
+            android:id="@+id/imanull"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@+id/lineEarnType"
+        android:layout_weight="0.2"
+        >
+
+        <!--// 兼职  工资  生活费-->
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="兼职"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            />
+
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="工资"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="生活费"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearEarnAddTool"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#5CA7FFEB"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:src= "@drawable/type1"
+                />
+
+            <TextView
+                android:id="@+id/tvEarnType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:text="当前选择的收入类型："
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/etEarnType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="点击选择类型.."
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src= "@drawable/cost_record_info"
+                />
+
+            <TextView
+                android:id="@+id/tvEarnNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:text="备注："
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/etEarnNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:hint="点击写备注..."
+                />
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:src= "@drawable/calendar"
+                />
+
+            <TextView
+                android:id="@+id/tvEarnCalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:text="选择日期："
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/etEarnCalender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="#000000"
+                android:hint="点击编辑日期..."
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:src= "@drawable/money"
+                />
+
+            <TextView
+                android:id="@+id/tvEarnMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_gravity="center_vertical"
+                android:text="金额："
+                android:textSize="18sp"
+                />
+
+
+            <EditText
+                android:id="@+id/etEarnMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="#000000"
+                android:hint="点击输入金额..."
+                />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnEarnSure"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:background="#B0FDC5"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:layout_margin="5dp"
+                android:text="完成"
+                />
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/ReaLayoutEarnTypeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9400BCD4"
+        android:visibility="gone"
+        >
+
+
+        <Button
+            android:id="@+id/btnEarnTypeQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="#5CA7FFEB"
+            android:layout_above="@id/wheelviewaddEarntype"
+            android:text="取消"
+            android:clickable="true"
+            />
+
+        <Button
+            android:id="@+id/btnEarnTypeSure"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="#5CA7FFEB"
+            android:layout_above="@id/wheelviewaddEarntype"
+            android:text="确定"
+            android:clickable="true"
+            />
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/wheelviewaddEarntype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

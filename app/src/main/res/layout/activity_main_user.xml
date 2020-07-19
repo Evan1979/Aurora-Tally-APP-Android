@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs"
+        >
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/tab"
+        android:layout_alignParentBottom="true"
+        >
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:checkedButton="@+id/button01"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/button01"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+
+                android:text="明细" />
+
+            <!--android:background="#2bccfc"-->
+
+
+            <RadioButton
+                android:id="@+id/button02"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="统计" />
+
+            <RadioButton
+                android:id="@+id/button03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:button="@null"
+                android:gravity="center"
+                android:text="个人中心" />
+        </RadioGroup>
+    </RelativeLayout>
+
+
+</RelativeLayout>

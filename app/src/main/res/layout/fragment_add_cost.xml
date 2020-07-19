@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/add_cost_bg"
+    android:id="@+id/fragAddCost"
+    tools:context=".AddCostFragment">
+
+
+   <LinearLayout
+       android:id="@+id/gridlay"
+       android:orientation="vertical"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="25dp"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
+           android:layout_weight="1"
+           >
+
+           <ImageView
+               android:id="@+id/btnType_1"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/eat"
+               android:layout_margin="5dp"
+               android:clickable="true"
+               />
+
+           <ImageView
+               android:id="@+id/btnType_2"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/store"
+               android:layout_margin="5dp"
+               android:clickable="true"
+
+               />
+           <ImageView
+               android:id="@+id/btnType_3"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/dinner"
+               android:layout_margin="5dp"
+               android:clickable="true"
+               />
+
+           <ImageView
+               android:id="@+id/btnType_4"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/fruit"
+               android:layout_margin="5dp"
+               android:clickable="true"
+               />
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
+           android:layout_weight="0.2"
+           >
+
+<!--//      吃饭  超市  娱乐  水果  -->
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="吃饭"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="超市"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="娱乐"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="水果"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+
+       </LinearLayout>
+
+
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
+           android:layout_weight="1"
+
+           >
+
+           <ImageView
+               android:id="@+id/btnType_5"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/t3"
+               android:layout_margin="5dp"
+               android:clickable="true"
+               />
+
+           <ImageView
+
+               android:id="@+id/btnType_6"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:src="@drawable/shop"
+               android:background="@drawable/stylebtntype"
+               android:layout_margin="5dp"
+               android:clickable="true"
+               />
+
+           <ImageView
+
+               android:id="@+id/btnType_7"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:src="@drawable/take_out"
+               android:background="@drawable/stylebtntype"
+               android:clickable="true"
+               android:layout_margin="5dp"/>
+
+           <ImageView
+               android:id="@+id/btnType_8"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:src="@drawable/protect"
+               android:background="@drawable/stylebtntype"
+               android:clickable="true"
+               android:layout_margin="5dp"/>
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
+           android:layout_weight="0.2"
+           >
+
+           <!--//     礼物  购物 外卖  护理  -->
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="礼物"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="购物"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="外卖"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="护理"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
+           android:layout_weight="1"
+           >
+
+           <ImageView
+               android:id="@+id/btnType_9"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_margin="5dp"
+               android:layout_weight="1"
+               android:background="@drawable/stylebtntype"
+               android:clickable="true"
+               android:src="@drawable/lifemoney" />
+
+
+           <ImageView
+               android:id="@+id/btnType_10"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/healt"
+               android:clickable="true"
+               android:layout_margin="5dp"/>
+
+
+           <ImageView
+               android:id="@+id/btnType_11"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/phone"
+               android:clickable="true"
+               android:layout_margin="5dp"/>
+
+
+           <ImageView
+               android:id="@+id/btnType_12"
+               android:layout_width="80dp"
+               android:layout_height="80dp"
+               android:layout_weight="1"
+               android:background="@drawable/stylebtntype"
+               android:src="@drawable/photo"
+               android:clickable="true"
+               android:layout_margin="5dp"/>
+
+
+       </LinearLayout>
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:layout_marginLeft="25dp"
+           android:layout_marginRight="25dp"
+           android:layout_weight="0.2"
+           >
+
+           <!--//  献爱心   医疗   通讯费用   拍照相片  兼职  工资-->
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="献爱心"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="医疗"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="通讯费用"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+           <TextView
+               android:layout_width="80dp"
+               android:layout_height="wrap_content"
+               android:text="拍照相片"
+               android:layout_weight="1"
+               android:gravity="center_horizontal"
+               />
+
+
+       </LinearLayout>
+
+       <!--<GridLayout-->
+           <!--android:id="@+id/gridlay"-->
+           <!--android:layout_margin="25dp"-->
+           <!--android:layout_gravity="center"-->
+           <!--android:layout_width="wrap_content"-->
+           <!--android:layout_height="wrap_content"-->
+           <!--android:alignmentMode="alignBounds"-->
+           <!--android:columnCount="4"-->
+           <!--android:rowCount = "6"-->
+           <!--android:orientation="horizontal"-->
+           <!--android:useDefaultMargins="false"-->
+           <!--&gt;-->
+
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_1"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/eat"-->
+               <!--android:layout_margin="5dp"-->
+               <!--android:clickable="true"-->
+               <!--/>-->
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_2"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/store"-->
+               <!--android:layout_margin="5dp"-->
+               <!--android:clickable="true"-->
+
+               <!--/>-->
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_3"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/dinner"-->
+               <!--android:layout_margin="5dp"-->
+               <!--android:clickable="true"-->
+               <!--/>-->
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_4"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/fruit"-->
+               <!--android:layout_margin="5dp"-->
+               <!--android:clickable="true"-->
+               <!--/>-->
+
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_5"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"               -->
+               <!--android:layout_weight="1"-->
+
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/t3"-->
+               <!--android:layout_margin="5dp"-->
+               <!--android:clickable="true"-->
+               <!--/>-->
+
+           <!--<ImageView-->
+
+               <!--android:id="@+id/btnType_6"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+               <!--android:src="@drawable/shop"-->
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:layout_margin="5dp"-->
+               <!--android:clickable="true"-->
+               <!--/>-->
+
+           <!--<ImageView-->
+
+               <!--android:id="@+id/btnType_7"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+               <!--android:src="@drawable/take_out"-->
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:clickable="true"-->
+               <!--android:layout_margin="5dp"/>-->
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_8"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+               <!--android:src="@drawable/protect"-->
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:clickable="true"-->
+               <!--android:layout_margin="5dp"/>-->
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_9"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+               <!--android:src="@drawable/lifemoney"-->
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:clickable="true"-->
+               <!--android:layout_margin="5dp"/>-->
+
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_10"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/healt"-->
+               <!--android:clickable="true"-->
+               <!--android:layout_margin="5dp"/>-->
+
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_11"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/phone"-->
+               <!--android:clickable="true"-->
+               <!--android:layout_margin="5dp"/>-->
+
+
+           <!--<ImageView-->
+               <!--android:id="@+id/btnType_12"-->
+               <!--android:layout_width="80dp"-->
+               <!--android:layout_height="80dp"-->
+               <!--android:layout_weight="1"-->
+               <!--android:background="@drawable/stylebtntype"-->
+               <!--android:src="@drawable/photo"-->
+               <!--android:clickable="true"-->
+               <!--android:layout_margin="5dp"/>-->
+
+
+       <!--</GridLayout>-->
+
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearAddTool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#5CA7FFEB"
+        android:visibility="gone"
+        android:orientation="vertical">
+        <!--android:visibility="gone"-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/type1" />
+
+            <TextView
+                android:id="@+id/tvType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="当前选择的支出类型："
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/etType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="点击编辑类型.."
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/cost_record_info" />
+
+            <TextView
+                android:id="@+id/tvNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="备注："
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/etNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="点击写备注..."
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/tvCalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="选择日期："
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/etCalender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="点击编辑日期..."
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+            <!--android:inputType="date"-->
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/money" />
+
+            <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="金额："
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/etMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="点击输入金额..."
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnSure"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="#B0FDC5"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="#000000"
+                android:textSize="25dp" />
+
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="#B0FDC5"
+                android:gravity="center"
+                android:text="修改"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/ReaLayoutCostTypeView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9400BCD4"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/btnCostTypeQuit"
+            android:clickable="false"
+            />
+
+        <Button
+            android:id="@+id/btnCostTypeQuit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="#5CA7FFEB"
+            android:text="取消"
+            android:clickable="true"
+            android:layout_above="@+id/wheelviewaddcosttype"
+
+            />
+
+        <Button
+            android:id="@+id/btnCostTypeSure"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="#5CA7FFEB"
+            android:text="确定"
+            android:clickable="true"
+            android:layout_above="@+id/wheelviewaddcosttype"
+            />
+
+        <com.contrarywind.view.WheelView
+            android:id="@+id/wheelviewaddcosttype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

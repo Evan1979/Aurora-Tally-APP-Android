@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Fragment1">
+
+    <LinearLayout
+        android:id="@+id/lineartitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/titl"
+        android:orientation="vertical"
+        >
+
+       <TextView
+           android:id="@+id/tvTitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textSize="25sp"
+           android:textColor="#000000"
+           android:text="极光记账"
+           />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:scrollbars="horizontal"
+        android:layout_below="@+id/lineartitle"
+
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+</RelativeLayout>

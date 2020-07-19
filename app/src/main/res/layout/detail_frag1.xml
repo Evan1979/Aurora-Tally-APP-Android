@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/de_bg"
+    tools:context=".Fragment1_detail">
+
+    <LinearLayout
+        android:id="@+id/lineartitle"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/titl"
+        android:orientation="vertical"
+        >
+
+       <TextView
+           android:id="@+id/tvTitle"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:gravity="center"
+           android:textSize="25sp"
+           android:textColor="#000000"
+           android:text="极光记账"
+           />
+
+       <LinearLayout
+           android:id="@+id/linerInfo"
+           android:layout_width="match_parent"
+           android:layout_height="40dp"
+           android:orientation="horizontal">
+
+
+           <LinearLayout
+               android:id="@+id/linerDate"
+               android:orientation="vertical"
+               android:layout_width="70dp"
+               android:layout_height="match_parent"
+               android:layout_marginLeft="5dp"
+               >
+
+
+               <LinearLayout
+                   android:orientation="horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content">
+
+                   <TextView
+                       android:id="@+id/TvYearTitle"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1"
+                       android:text="2018年"
+                       android:textColor="#807777"
+                       android:layout_gravity="center_vertical"
+                       android:textSize="10dp"
+                       />
+
+                   <ImageView
+                       android:id="@+id/imaTip1"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:layout_gravity="center"
+                       android:background="@drawable/ret" />
+
+
+               </LinearLayout>
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   >
+
+                   <TextView
+                       android:id="@+id/TvMonthTitle"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="2"
+                       android:textColor="#000000"
+                       android:text="07月"
+                       android:textSize="18sp"
+                       />
+
+                   <ImageView
+                       android:id="@+id/imaTip"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"
+                       android:background="@mipmap/anti_ang" />
+
+               </LinearLayout>
+
+
+
+
+           </LinearLayout>
+
+
+
+           <RelativeLayout
+               android:orientation="vertical"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:layout_marginRight="15dp"
+               >
+
+               <TextView
+                   android:id="@+id/TvPaymentEarn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="40dp"
+                   android:text="收入"
+                   android:textColor="#FDFDFD"
+                   android:textSize="10dp" />
+
+               <TextView
+                   android:id="@+id/TvPaymentCost"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textColor="#FDFDFD"
+                   android:layout_marginRight="130dp"
+                   android:layout_alignParentEnd="true"
+                   android:text="支出"
+                   android:textSize="10dp"
+                   />
+
+
+               <TextView
+                   android:id="@+id/TvMoneyEarn"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="1000"
+                   android:layout_marginLeft="40dp"
+                   android:layout_alignParentBottom="true"
+                   android:textColor="#000000"
+                   android:textSize="15dp"
+                   />
+
+               <TextView
+                   android:id="@+id/TvMoneyCost"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginLeft="108dp"
+                   android:layout_marginTop="9dp"
+                   android:layout_toRightOf="@id/TvPaymentEarn"
+                   android:text="1200"
+                   android:textColor="#000000"
+                   android:textSize="15dp" />
+
+               <Button
+                   android:id="@+id/btnSearch"
+                   android:layout_width="20dp"
+                   android:layout_height="20dp"
+                   android:background="@drawable/searchicon"
+                   android:layout_alignParentEnd="true"
+                   android:layout_alignParentBottom="true"
+
+                   />
+           </RelativeLayout>
+
+       </LinearLayout>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/lineartitle"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="10dp"
+        android:scrollbars="horizontal"></android.support.v7.widget.RecyclerView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/add"
+        android:layout_alignParentBottom="true"
+        app:maxImageSize="48dp" />
+
+
+
+</RelativeLayout>

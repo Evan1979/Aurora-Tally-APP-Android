@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/de_bg"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/linearPieChart"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="#FFFFFF"
+        >
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd = "true"
+        android:layout_below="@id/linearPieChart"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/linerDate"
+            android:orientation="vertical"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/TvMonthFragYearTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:text="2019年"
+                    android:textColor="#807777"
+                    android:textSize="10dp" />
+
+
+                <ImageView
+                    android:id="@+id/imaTip1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ret" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/TvMonthFragMonthTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:text="07月"
+                    android:textSize="20dp"
+                    />
+
+
+                <ImageView
+                    android:id="@+id/imaTip"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@mipmap/anti_ang" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="15dp"
+            >
+
+            <TextView
+                android:id="@+id/TvPaymentEarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:text="收入"
+                android:textColor="#807777"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/TvPaymentCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#807777"
+                android:layout_marginRight="130dp"
+                android:layout_alignParentEnd="true"
+                android:text="支出"
+                android:textSize="10dp"
+                />
+
+
+            <TextView
+                android:id="@+id/TvMoneyMonthEarn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentBottom="true"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:id="@+id/TvMoneyMonthCost"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="100dp"
+                android:text="0"
+                android:textSize="15dp"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_save_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearPieChart"
+        android:layout_alignParentEnd= "true"
+        android:background="@drawable/stylebtntype"
+        android:text="保存该饼状图"/>
+
+
+    
+</RelativeLayout>

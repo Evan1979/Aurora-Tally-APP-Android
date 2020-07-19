@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:id="@+id/linear2title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/titl"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/lineartitle11"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:clickable="true"
+            >
+
+            <TextView
+                android:id="@+id/tvStatisticsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="170dp"
+                android:gravity="center"
+                android:text="收入"
+                android:textColor="#000000"
+                android:textSize="22sp" />
+
+            <ImageView
+                android:id="@+id/imaTip"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/anti_ang" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lineartitle22"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/LinerMain2"
+            android:layout_alignTop="@+id/LinerMain2"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnfragDay"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/styletip"
+                android:text="Day" />
+
+            <Button
+                android:id="@+id/btnfragMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/styletip"
+                android:text="Month" />
+
+            <Button
+                android:id="@+id/btnfragYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/styletip"
+                android:text="Year" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearChoose1"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:layout_below="@id/linear2title"
+        android:layout_marginTop="3dp"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imaCost"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/cost" />
+
+            <TextView
+                android:id="@+id/tvcostText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:text="支出"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imaEarn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@mipmap/earn" />
+
+            <TextView
+                android:id="@+id/tvearnText"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:text="收入"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearChoose1"
+        android:layout_gravity="center_horizontal" />
+
+</RelativeLayout>

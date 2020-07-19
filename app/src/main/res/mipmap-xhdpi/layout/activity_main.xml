@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <!--<android.support.design.widget.AppBarLayout-->
+        <!--android:id="@+id/appBar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="#4066F9CF"-->
+        <!--android:theme="@style/AppTheme.AppBarOverlay">-->
+
+        <!--&lt;!&ndash;#2AABE5&ndash;&gt;-->
+        <!--&lt;!&ndash;#778DE2&ndash;&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/title"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:minHeight="?actionBarSize"-->
+            <!--android:padding="@dimen/appbar_padding"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--android:layout_below="@id/appBar"-->
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/tabs"
+        android:layout_marginBottom="2dp" />
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"app:layout_behavior，是界面-->
+    <!--不发生向上堆叠-->
+
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab" />
+
+    <!--app:tabIndicatorHeight=”0dp”指示条是否显示-->
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:layout_above="@+id/tabs"
+        android:src="@drawable/add"
+        app:maxImageSize="68dp" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#FEFFFF</color>
+    <color name="colorLight">#F3F8FE</color>
+    <color name="colorGray">#8B8D8F</color>
+    <color name="colorBac">#A6C6C5</color>
+    <color name="colorBac1">#82B1FF</color>
+    <color name="colorBac2">#84FFFF</color>
+    <color name="colorbtntype">#5CA7FFEB</color>
+    <color name="colorbtn11">#E11446F0</color>
+    <color name="colorChartBg">#E0F7FD</color>
+    <color name="blue">#9C80FF</color>
+
+
+
+
+
+    <!--日期工具配色-->
+    <color name="date_picker_bg">#FFFFFF</color>
+    <color name="date_picker_divider">#11112233</color>
+    <color name="date_picker_text_light">#59B29C</color>
+    <color name="date_picker_text_dark">#333333</color>
+
+    <color name="main_bg">#F0F0F0</color>
+    <color name="select_title_text">#B0B0B0</color>
+    <color name="current_time_bg">#FFFFFF</color>
+    <color name="current_time_text">#666666</color>
+    <color name="selected_time_text">#57C5E8</color>
+
+
+
+
+</resources>

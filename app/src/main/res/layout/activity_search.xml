@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/de_bg"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="15dp"
+
+        android:id="@+id/SearchRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        >
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/linearAddTool"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#5CA7FFEB"
+        android:orientation="vertical">
+        <!--android:visibility="gone"-->
+
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="请输入以下索引元素："-->
+            <!--android:layout_margin="15dp"-->
+            <!--/>-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_marginLeft="5dp"-->
+                <!--android:layout_marginRight="5dp"-->
+                <!--android:src="@drawable/type1" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvSeekPayType"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:text="收支类型："-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="20dp" />-->
+
+
+            <!--<EditText-->
+                <!--android:id="@+id/etSeekPayType"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="点击选择类型.."-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="15dp" />-->
+
+        <!--</LinearLayout>-->
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/type1" />
+
+            <TextView
+                android:id="@+id/tvSeekType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="使用类型："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:id="@+id/etSeekType"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="点击选择类型.."
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+                <ImageView
+                    android:id="@+id/imgClearType"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/etSeekType"
+                    android:src="@drawable/clear"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--android:layout_width="35dp"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:src="@drawable/cost_record_info" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/tvNote"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:text="备注："-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="20dp" />-->
+
+
+            <!--<EditText-->
+                <!--android:id="@+id/etSeekNote"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:hint="请输入索引备注..."-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="15dp" />-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/calendar" />
+
+            <TextView
+                android:id="@+id/tvCalender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="选择日期："
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/etSeekCalender"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:hint="点击编辑索引日期..."
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+
+
+                <ImageView
+                    android:id="@+id/imgClearDate"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/etSeekCalender"
+                    android:src="@drawable/clear"
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/btnSearCh"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/searchicon"
+                android:gravity="center"
+                android:clickable="true"
+                />
+
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="75dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:background="#B0FDC5"
+                android:gravity="center"
+                android:text="修改"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:visibility="gone" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/ReaLayoutTypeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+
+
+            <Button
+                android:id="@+id/btnSeaQuit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:background="#5CA7FFEB"
+                android:text="取消"
+                android:clickable="true"
+                />
+
+            <Button
+                android:id="@+id/btnSeaSure"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:background="#5CA7FFEB"
+                android:text="确定"
+                android:clickable="true"
+                />
+
+            <com.contrarywind.view.WheelView
+                android:id="@+id/wheelview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnSeaQuit"
+                android:layout_margin="10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
+
+
+
